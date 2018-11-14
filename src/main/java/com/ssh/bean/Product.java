@@ -5,13 +5,13 @@ import org.hibernate.annotations.GenericGenerator;
 import javax.persistence.*;
 
 @Entity
-@Table(name="product", catalog = "ssh")
+/*@Table(name="product", catalog = "ssh")*/
 public class Product {
-	@Id
+	/*@Id
 	@GeneratedValue(generator = "id")
-	@GenericGenerator(name = "id", strategy = "native") //自定义主键生成策略 generator = name
+	@GenericGenerator(name = "id", strategy = "native") //自定义主键生成策略 generator = name*/
 	private int id;// 商品ID
-	@Column(length = 100)
+	/*@Column(length = 100)*/
 	private String name;// 商品名称
 	private double price;// 商品价格
 

@@ -40,7 +40,9 @@
             </props>
         </property>
         <!-- 扫描并加载注解过的实体类 -->
-        <property name="packagesToScan" value="com.ssh.bean"/>
+       <!-- <property name="packagesToScan" value="com.ssh.bean"/>-->
+        <!--通过配置文件加载实体类-->
+        <property name="mappingLocations" value="hbm/*.hbm.xml"></property>
     </bean>
     <!--HibernateTemplate配置,直接在定义HibernateTemplate加上注解就可以引入不需要使用set方法注入-->
     <bean id="hibernateTemplate" class="org.springframework.orm.hibernate5.HibernateTemplate">

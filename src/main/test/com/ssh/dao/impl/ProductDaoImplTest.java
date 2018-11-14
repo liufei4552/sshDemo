@@ -35,11 +35,11 @@ public class ProductDaoImplTest {
 		Product product=dao.findProduct(1);
 		System.out.println(product);
 	}*/
-	/*@Test
+	@Test
 	public void findAllProduct(){
 		List<Product>list=dao.findAllProduct();
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
-	}*/
+	}
 }
