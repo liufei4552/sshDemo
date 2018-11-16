@@ -10,12 +10,12 @@
             <generator class="identity"/>
         </id>
         <property name="name" type="java.lang.String">
-            <column name="name" not-null="true">
+            <column name="name">
                 <comment>商品名称</comment>
             </column>
         </property>
         <property name="price" type="java.lang.Double">
-            <column name="price" not-null="true">
+            <column name="price">
                 <comment>商品价格</comment>
             </column>
         </property>

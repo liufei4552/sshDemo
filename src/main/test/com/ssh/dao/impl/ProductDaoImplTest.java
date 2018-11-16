@@ -2,6 +2,7 @@ package com.ssh.dao.impl;
 
 import com.ssh.bean.Product;
 import com.ssh.dao.ProductDao;
+import org.hibernate.Session;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +16,9 @@ import java.util.List;
 public class ProductDaoImplTest {
 	@Autowired
 	private ProductDao dao;
+	/**
+	 * 插入信息
+	 */
 	/*@Test
 	public void saveProduct() {
 		Product product=new Product();
@@ -22,6 +26,9 @@ public class ProductDaoImplTest {
 		product.setPrice(32);
 		dao.saveProduct(product);
 	}*/
+	/**
+	 * 修改信息
+	 */
 	/*@Test
 	public void updateProduct(){
 		Product product=new Product();
@@ -30,14 +37,48 @@ public class ProductDaoImplTest {
 		product.setPrice(13);
 		dao.updateProduct(product);
 	}*/
+	/**
+	 * 根据id查询信息
+	 */
 	/*@Test
 	public void findProduct(){
 		Product product=dao.findProduct(1);
 		System.out.println(product);
 	}*/
-	@Test
+	/**
+	 * 查询信息
+	 */
+	/*@Test
 	public void findAllProduct(){
 		List<Product>list=dao.findAllProduct();
+		for (int i = 0; i < list.size(); i++) {
+			System.out.println(list.get(i));
+		}
+	}*/
+	/**
+	 * 删除信息
+	 */
+	/*@Test
+	public void deleProduct(){
+		Product product=new Product();
+		product.setId(4);
+		dao.deleProduct(product);
+	}*/
+	/**
+	 * 查询所有信息总数
+	 */
+	/*@Test
+	public void findAllCount(){
+		long v=dao.findAllCount();
+		System.out.println(v);
+	}*/
+
+	/**
+	 * 分页查询
+	 */
+	@Test
+	public void findInforByPage(){
+		List<Product>list=dao.findInforByPage(1, 1);
 		for (int i = 0; i < list.size(); i++) {
 			System.out.println(list.get(i));
 		}
